@@ -1,0 +1,66 @@
+$(".Table__TD").map((index, element) => {
+        //Organizing the elements needed based on the classes they are in
+        const playerElement = $(element).find(".AnchorLink");
+        const teamElement = $(element).find(".athleteCell__teamAbbrev");
+
+        //Finding the specific elements within the classes
+        const player = $(playerElement).text();
+        const team = $(teamElement).text();
+
+
+        console.log(player, team);
+
+    }).get();
+
+///////////////-------------NEXT PART OF CODE-------------///////////////////////////////////////////////////////////////////////////////
+
+$("#fittPageContainer > div.page-container.cf > div > div > section > div > div > div > div.flex > div > div.Table__Scroller > table > tbody > tr").map((index, element) => {
+        //Organizing the elements needed based on the classes they are in
+        const POS= $(element).find(".Table__TD")[0];
+        const GP = $(element).find(".Table__TD")[1];
+        const MIN = $(element).find(".Table__TD")[2];
+        const PTS = $(element).find(".Table__TD")[3];
+        const FGM = $(element).find(".Table__TD")[4];
+        const FGA = $(element).find(".Table__TD")[5];
+        const FGperc = $(element).find(".Table__TD")[6];
+        const _3PM = $(element).find(".Table__TD")[7];
+        const _3PA = $(element).find(".Table__TD")[8];
+        const _3Pperc = $(element).find(".Table__TD")[9];
+        const FTM = $(element).find(".Table__TD")[10];
+        const FTA = $(element).find(".Table__TD")[11];
+        const FTperc = $(element).find(".Table__TD")[12];
+        const REB = $(element).find(".Table__TD")[13];
+        const AST = $(element).find(".Table__TD")[14];
+        const STL = $(element).find(".Table__TD")[15];
+        const BLK = $(element).find(".Table__TD")[16];
+        const TO = $(element).find(".Table__TD")[17];
+        const DD2 = $(element).find(".Table__TD")[18];
+        const TD3 = $(element).find(".Table__TD")[19];
+        const PER = $(element).find(".Table__TD")[20];
+
+        //Finding the specific elements within the classes
+        const a0 = $(POS).text()
+        const a1 = $(GP).text();
+        const a2 = $(MIN).text();
+        const a3 = $(PTS).text();
+        const a4 = $(FGM).text();
+        const a5 = $(FGA).text();
+        const a6 = $(FGperc).text();
+        const a7 = $(_3PM).text();
+        const a8 = $(_3PA).text();
+        const a9 = $(_3Pperc).text();
+        const a10 = $(FTM).text();
+        const a11 = $(FTA).text();
+        const a12 = $(FTperc).text();
+        const a13 = $(REB).text();
+        const a14 = $(AST).text();
+        const a15 = $(STL).text();
+        const a16 = $(BLK).text();
+        const a17 = $(TO).text();
+        const a18 = $(DD2).text();
+        const a19 = $(TD3).text();
+        const a20 = $(PER).text();
+
+        console.log(a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20)
+
+    }).get();
